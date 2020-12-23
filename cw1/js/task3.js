@@ -3,5 +3,5 @@
 //         Запишите название нашей планеты в переменную и спросите пользователя живет ли он на этой планете
 
 var ourPlanet = "Mars";
-alert("Do you live on " + ourPlanet + "?");
+confirm("Do you live on " + ourPlanet + "?");
 document.write("Congratulations!");
