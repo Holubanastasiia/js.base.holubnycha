@@ -9,6 +9,6 @@ average = (number1 + number2 + number3) / 3;
 
 if (number1 === number2 || number1 === number3 || number2 === number3) {
     alert("Ошибка") ;
-}  else {
+} else {
     alert("Среднее арифметическое = " + average) ; 
 }
