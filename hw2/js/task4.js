@@ -15,7 +15,7 @@ for (; a < b; a++) {
         console.log(a);
     }
 }
-console.log("sum " + sum);
+console.log(sum);
 
    
 
