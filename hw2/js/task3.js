@@ -10,5 +10,7 @@ if (number1 > number2 && number1 > number3) {
     document.write(number1);
 } else if (number2 > number3 && number2 > number1) {
     document.write(number2);
-} else (number3 > number1 && number3 > number2) 
+} else { 
     document.write(number3);
+}
+    
