@@ -12,11 +12,12 @@ var yourCar = prompt('Какая ваша любимая марка автомо
 var carMark = cars.indexOf(yourCar, 0);
 var yourAnotherCar = prompt('Введите другую марку автомобиля');
 
+
 if (carMark > -1 ) {
     cars.splice(carMark + 1, 0, yourAnotherCar); 
     console.log("Любимая марка автомобиля пользователя - " + cars);
 } else if (carMark = -1) {
-    cars.push(yourCar);
+    cars.push(yourAnotherCar);
     console.log("Любимая марка автомобиля пользователя - " + cars);
 }
 

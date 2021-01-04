@@ -7,12 +7,8 @@
 var cities = ["Kyiv", "Kharkiv", "Lviv"];
 var population = [2.884, 1.419, 721.301];
 
-var a = {
-    kyiv: 2.884,
-    kharkiv: 1.419,
-    lviv: 721.301
-};
-
-var key = prompt("Население какого города Вы хотите узнать?(kyiv, kharkiv, lviv)")
-var value = a[key];
-console.log(value);
+var associativeArray = new Object();
+for (var i = 0; i < 3 ; i++) {
+  associativeArray[cities[i] ]= population[i];
+}
+console.log(associativeArray)
