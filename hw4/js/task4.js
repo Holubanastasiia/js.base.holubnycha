@@ -5,3 +5,18 @@
 // Пользователь ввел: 6
 // Ряд Фибоначчи: 1, 1, 2, 3, 5, 8, 13, ...
 // Функция должна вернуть: 8
+
+function fib(n) {
+    var a = 1;
+    var b = 1;
+    var c;
+
+    for (var i = 3; i <= n; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return c;
+}
+n = +prompt("Введите число n: ");
+console.log(fib(n));
