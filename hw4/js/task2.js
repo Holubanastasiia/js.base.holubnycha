@@ -8,6 +8,7 @@ function test(a, b) {
     var result = 1;
     if (isNaN(a) || isNaN(b)) {
         console.log("Вы ввели некорректное число или степень!");
+        return;
     }
     for (let i = 0; i < b; i++) {
         result *= a;
