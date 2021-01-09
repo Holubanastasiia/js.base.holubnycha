@@ -9,5 +9,43 @@
 // Сравнить ответ пользователя и компьютера, определить кто выиграл(или ничья)
 // Спросить пользователя, хочет ли он повторить, если "да", запустить игру заново
 
-var computerChoice = Math.random();
-alert(computerChoice); 
+// var computerChoice = Math.random();
+// alert(computerChoice); 
+
+function getComputerAnswer() {
+    var computerChoice = Math.random()
+    if (computerChoice < 0.33) {
+        computerChoice = "Камень"
+    } else if (computerChoice < 0.66) {
+        computerChoice = "Ножницы"
+    } else {
+        computerChoice = "Бумага"
+    }
+    return computerChoice.toLowerCase();
+}
+
+function getUserAnswer() {
+    var answer = prompt("Выберите из трёх вариантов - Камень, Ножницы, Бумага");
+    return answer.toLowerCase();
+}
+
+function game() {
+    var user = getUserAnswer();
+    var computer = getComputerAnswer();
+
+    if (user === computer) {
+        return "draw";
+    }
+
+    if ((user === "камень" && computer === "ножницы") ||
+        (user === "ножницы" && computer === "бумага") ||
+        (user === "бумага" && computer === "камень")) {
+        return "Сongratulations, you are winner!";
+    } else {
+        return "Sorry, you have lost...";
+    }
+}
+do {
+    console.log(game())
+    var replayGame = confirm("Хотите сыграть еще раз?")
+} while (replayGame)
