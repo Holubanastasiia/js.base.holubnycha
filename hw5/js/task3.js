@@ -5,19 +5,18 @@
 var staff = [];
 let anotherStaff;
 do {
-    staff.push(
-        cooperator = {
-            name: a = prompt("Введите имя сотрудника"),
-            sName: b = prompt("Введите фамилию сотрудника"),
-            age: c = prompt("Введите вoзраст сотрудника"),
-            occupation: d = prompt("Введите должность сотрудника"),
-            show: function () {
-                console.log("Имя сотрудника1: " + this.name);
-                console.log("Фамилия сотрудника1: " + this.sName);
-                console.log("Возраст сотрудника1: " + this.age);
-                console.log("Должность сотрудника1: " + this.occupation);
-            }
+    staff.push({
+        name: a = prompt("Введите имя сотрудника"),
+        sName: b = prompt("Введите фамилию сотрудника"),
+        age: c = prompt("Введите вoзраст сотрудника"),
+        occupation: d = prompt("Введите должность сотрудника"),
+        show: function () {
+            console.log("Имя сотрудника1: " + this.name);
+            console.log("Фамилия сотрудника1: " + this.sName);
+            console.log("Возраст сотрудника1: " + this.age);
+            console.log("Должность сотрудника1: " + this.occupation);
         }
+    }
     )
     console.log(staff);
     anotherStaff = confirm("Ввести данные для еще одного сотрудника?");
