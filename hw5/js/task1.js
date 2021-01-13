@@ -24,4 +24,4 @@ function GetQuadrant(x, y) {
         console.log(null);
     }
 }
-GetQuadrant();
+GetQuadrant(x, y);

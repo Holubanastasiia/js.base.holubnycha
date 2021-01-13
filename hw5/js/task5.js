@@ -45,43 +45,43 @@ assignSalary(staff)
 var criteria = prompt("Введите критерий сортировки (name, sName, age, occupation, salary)");
 console.log(criteria);
 staff.sort(function (a, b) {
-    switch (criteria) {
-        case "name":
-            if (a["name"] > b["name"]) {
-                return 1;
-            }
-            else if (a["name"] < b["name"]) {
-                return -1;
-            } else {
-                return 0;
-            }
-        case "sName":
-            if (a["sName"] > b["sName"]) {
-                return 1;
-            }
-            else if (a["sName"] < b["sName"]) {
+    // switch (criteria) {
+    //     case "name":
+    //         if (a["name"] > b["name"]) {
+    //             return 1;
+    //         }
+    //         else if (a["name"] < b["name"]) {
+    //             return -1;
+    //         } else {
+    //             return 0;
+    //         }
+    //     case "sName":
+    //         if (a["sName"] > b["sName"]) {
+    //             return 1;
+    //         }
+    //         else if (a["sName"] < b["sName"]) {
 
-                return -1;
-            } else {
-                return 0;
-            }
-        case "age":
-            return a["age"] - b["age"];
-        case "occupation":
-            if (a["occupation"] > b["occupation"]) {
-                return 1;
-            }
-            else if (a["occupation"] < b["occupation"]) {
+    //             return -1;
+    //         } else {
+    //             return 0;
+    //         }
+    //     case "age":
+    //         return a["age"] - b["age"];
+    //     case "occupation":
+    //         if (a["occupation"] > b["occupation"]) {
+    //             return 1;
+    //         }
+    //         else if (a["occupation"] < b["occupation"]) {
 
-                return -1;
-            } else {
-                return 0;
-            }
-        case "salary":
-            return a["salary"] - b["salary"];
-        default:
-            console.log("None");
-    }
+    //             return -1;
+    //         } else {
+    //             return 0;
+    //         }
+    //     case "salary":
+    //         return a["salary"] - b["salary"];
+    //     default:
+    //         console.log("None");
+    // }
 })
 
 for (var i = 0; i < staff.length; i++) {

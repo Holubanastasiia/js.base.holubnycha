@@ -8,6 +8,9 @@ var b = +prompt("Введите второе число: ");
 if (isNaN(a) || isNaN(b)) {
     console.log("Вы ввели некорректное число!");
 }
+if (sign != "+" || sign != "-" || sign != "*" || sign != "/") {
+    console.log("Вы ввели некорректный знак арифметической операции!");
+}
 var calculator = {
     sum: function (a, b) {
         var result = a + b;
