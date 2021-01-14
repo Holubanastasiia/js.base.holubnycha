@@ -3,26 +3,25 @@
 // Параметр для сортировки принимается от пользователя.
 // После выполнения функции — вывести информацию о сотрудниках.
 
-var staff = [
-    cooperator1 = {
+var staff = [];
+let anotherStaff;
+do {
+    staff.push({
         name: a = prompt("Введите имя сотрудника"),
         sName: b = prompt("Введите фамилию сотрудника"),
         age: c = prompt("Введите вoзраст сотрудника"),
         occupation: d = prompt("Введите должность сотрудника"),
-    },
-    cooperator2 = {
-        name: a = prompt("Введите имя сотрудника"),
-        sName: b = prompt("Введите фамилию сотрудника"),
-        age: c = prompt("Введите вoзраст сотрудника"),
-        occupation: d = prompt("Введите должность сотрудника"),
-    },
-    cooperator3 = {
-        name: a = prompt("Введите имя сотрудника"),
-        sName: b = prompt("Введите фамилию сотрудника"),
-        age: c = prompt("Введите вoзраст сотрудника"),
-        occupation: d = prompt("Введите должность сотрудника"),
+        show: function () {
+            console.log("Имя сотрудника1: " + this.name);
+            console.log("Фамилия сотрудника1: " + this.sName);
+            console.log("Возраст сотрудника1: " + this.age);
+            console.log("Должность сотрудника1: " + this.occupation);
+        }
     }
-]
+    )
+    console.log(staff);
+    anotherStaff = confirm("Ввести данные для еще одного сотрудника?");
+} while (anotherStaff)
 
 function assignSalary(staff) {
     for (var i = 0; i < staff.length; i++) {
@@ -39,51 +38,26 @@ function assignSalary(staff) {
         }
     }
 }
-assignSalary(staff)
-
+assignSalary(staff);
 
 var criteria = prompt("Введите критерий сортировки (name, sName, age, occupation, salary)");
 console.log(criteria);
 staff.sort(function (a, b) {
-    // switch (criteria) {
-    //     case "name":
-    //         if (a["name"] > b["name"]) {
-    //             return 1;
-    //         }
-    //         else if (a["name"] < b["name"]) {
-    //             return -1;
-    //         } else {
-    //             return 0;
-    //         }
-    //     case "sName":
-    //         if (a["sName"] > b["sName"]) {
-    //             return 1;
-    //         }
-    //         else if (a["sName"] < b["sName"]) {
+    switch (criteria) {
+        case criteria == "name" || criteria == "sName" || criteria == "occupation":
+            if (a > b) {
+                return 1;
 
-    //             return -1;
-    //         } else {
-    //             return 0;
-    //         }
-    //     case "age":
-    //         return a["age"] - b["age"];
-    //     case "occupation":
-    //         if (a["occupation"] > b["occupation"]) {
-    //             return 1;
-    //         }
-    //         else if (a["occupation"] < b["occupation"]) {
-
-    //             return -1;
-    //         } else {
-    //             return 0;
-    //         }
-    //     case "salary":
-    //         return a["salary"] - b["salary"];
-    //     default:
-    //         console.log("None");
-    // }
+            }
+            else if (a < b) {
+                return -1;
+            }
+        case criteria == "age" || criteria == "salary":
+            return a - b;
+        default:
+            console.log("None");
+    }
 })
-
 for (var i = 0; i < staff.length; i++) {
     console.log("Имя: " + staff[i].name);
     console.log("Фамилия: " + staff[i].sName);
