@@ -114,5 +114,11 @@ function sortByOccupation() {
         return 0;
     })
 }
-
+for (var i = 0; i < staff.length; i++) {
+    console.log("Имя: " + staff[i].name);
+    console.log("Фамилия: " + staff[i].sName);
+    console.log("Возраст: " + staff[i].age);
+    console.log("Должность: " + staff[i].occupation);
+    console.log("Зарплата: " + staff[i].salary);
+}
 
