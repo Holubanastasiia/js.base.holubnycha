@@ -43,17 +43,17 @@ assignSalary(staff);
 var criteria = prompt("Введите критерий сортировки (name, sName, age, occupation, salary)");
 console.log(criteria);
 if (criteria === "name") {
-    return sortByName();
+    sortByName();
 } else if (criteria === "sName") {
-    return sortBysName();
+    sortBysName();
 } else if (criteria === "age") {
-    return sortByAge();
+    sortByAge();
 } else if (criteria === "occupation") {
-    return sortByOccupation();
+    sortByOccupation();
 } else if (criteria === "salary") {
-    return sortBySalary();
+    sortBySalary();
 } else {
-    return "Выберете только один из предложенных критериев (name, sName, age, occupation, salary)";
+    "Выберете только один из предложенных критериев (name, sName, age, occupation, salary)";
 }
 
 
