@@ -42,27 +42,77 @@ assignSalary(staff);
 
 var criteria = prompt("Введите критерий сортировки (name, sName, age, occupation, salary)");
 console.log(criteria);
-staff.sort(function (a, b) {
-    switch (criteria) {
-        case criteria == "name" || criteria == "sName" || criteria == "occupation":
-            if (a > b) {
-                return 1;
-
-            }
-            else if (a < b) {
-                return -1;
-            }
-        case criteria == "age" || criteria == "salary":
-            return a - b;
-        default:
-            console.log("None");
-    }
-})
-for (var i = 0; i < staff.length; i++) {
-    console.log("Имя: " + staff[i].name);
-    console.log("Фамилия: " + staff[i].sName);
-    console.log("Возраст: " + staff[i].age);
-    console.log("Должность: " + staff[i].occupation);
-    console.log("Зарплата: " + staff[i].salary);
+if (criteria === "name") {
+    return sortByName();
+} else if (criteria === "sName") {
+    return sortBysName();
+} else if (criteria === "age") {
+    return sortByAge();
+} else if (criteria === "occupation") {
+    return sortByOccupation();
+} else if (criteria === "salary") {
+    return sortBySalary();
+} else {
+    return "Выберете только один из предложенных критериев (name, sName, age, occupation, salary)";
 }
+
+
+function sortStaff(staff) {
+    for (var i = 0; i < staff.length; i++) {
+        console.log("Имя: " + staff[i].name);
+        console.log("Фамилия: " + staff[i].sName);
+        console.log("Возраст: " + staff[i].age);
+        console.log("Должность: " + staff[i].occupation);
+        console.log("Зарплата: " + staff[i].salary);
+    }
+}
+
+function sortByName() {
+    staff.sort(function (a, b) {
+        var nameA = a.name.toLowerCase();
+        var nameB = b.name.toLowerCase();
+        if (nameA < nameB)
+            return -1;
+        if (nameA > nameB)
+            return 1;
+        return 0;
+    })
+}
+
+function sortBysName() {
+    staff.sort(function (a, b) {
+        var sNameA = a.sName.toLowerCase();
+        var sNameB = b.sName.toLowerCase();
+        if (sNameA < sNameB)
+            return -1;
+        if (sNameA > sNameB)
+            return 1;
+        return 0;
+    })
+}
+
+function sortByAge() {
+    staff.sort(function (a, b) {
+        return a.age - b.age;
+    })
+}
+
+function sortBySalary() {
+    staff.sort(function (a, b) {
+        return a.salary - b.salary;
+    })
+}
+
+function sortByOccupation() {
+    staff.sort(function (a, b) {
+        var nameA = a.occupation.toLowerCase();
+        var nameB = b.occupation.toLowerCase();
+        if (nameA < nameB)
+            return -1;
+        if (nameA > nameB)
+            return 1;
+        return 0;
+    })
+}
+
 
