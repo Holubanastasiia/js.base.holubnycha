@@ -20,5 +20,10 @@ let users = {
     }
 };
 
-function countOnline(obj) { }
+function countOnline(obj) {
+    var obj = users.[]
+    for (obj === true in users) {
+
+    }
+}
 console.log(countOnline(users));

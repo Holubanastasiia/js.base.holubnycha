@@ -1,6 +1,15 @@
 // 4. Используйте метод some внутри функции checkPositive, чтобы проверить, является ли какой - либо элемент в arr положительным.Функция должна возвращать логическое значение.
 
-function checkPositive(arr) { }
+function checkPositive(arr) {
+    let check = arr.some(function (arr) {
+        if (arr >= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    console.log(check)
+}
 checkPositive([1, 2, 3, -4, 5]);
 
 // ##########################################################

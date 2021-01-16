@@ -22,7 +22,6 @@ let user = {
 
 function addFriend(userObj, friend) {
     // your code here
-    var friendsName = friend
-    userObj.push(friendsName);
+
 }
 console.log(addFriend(user, 'Pete'));

@@ -19,6 +19,7 @@ let users = {
     }
 };
 
+
 function getArrayOfUsers(obj) {
 
 }
