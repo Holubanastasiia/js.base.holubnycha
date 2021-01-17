@@ -1,0 +1,92 @@
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1000px;
+  height: 500px;
+}
+
+#btn__show-modal {
+  display: block;
+  padding: 20px 30px;
+  background: #458FF6;
+  border: 1.4px solid #458FF6;
+  color: #fff;
+  border-radius: 45px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 60px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#btn__show-modal:hover {
+  background-color: #fff;
+  color: #458FF6;
+}
+
+.my-modal-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(10, 12, 173, 0.582);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.my-modal-box__input-name, .my-modal-box__input-surname {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.my-modal-box__btn-send, .my-modal-box__btn-cancel {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  color: #414141;
+  cursor: pointer;
+}
+
+.my-modal-box__btn-send:hover, .my-modal-box__btn-cancel:hover {
+  color: white;
+}
+
+.my-modal-box__btn-send {
+  background-color: #77eb90;
+  margin-right: 10px;
+}
+
+.my-modal-box__btn-send:hover {
+  background-color: #37a54f;
+}
+
+.my-modal-box__btn-cancel {
+  background-color: #eb7786;
+}
+
+.my-modal-box__btn-cancel:hover {
+  color: white;
+  background-color: #e7465c;
+}
+/*# sourceMappingURL=style.css.map */

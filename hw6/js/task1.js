@@ -21,7 +21,9 @@ let user = {
 };
 
 function addFriend(userObj, friend) {
-    // your code here
-
+    // your code here 
+    userObj["data"]["friends"].push(friend); {
+        console.log(userObj["data"]["friends"])
+    }
 }
-console.log(addFriend(user, 'Pete'));
+addFriend(user, 'Pete');
