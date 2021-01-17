@@ -10,7 +10,7 @@ button {
     justify-content: center;
     align-items: center;
     width: 1000px;
-    height: 500px;
+    height: 100vh;
 }
 
 #btn__show-modal{
@@ -36,12 +36,10 @@ button {
     position: fixed;
     left: 50%;
     top: 50%;
-
     transform: translate(-50%, -50%);
-    background-color: rgba(10, 12, 173, 0.582);
+    background-color: #458FF6;
     padding: 10px;
-    border-radius: 10px;
-
+    border-radius: 5px;
 
     &__input-name,
     &__input-email {
@@ -56,10 +54,11 @@ button {
 
     &__btn-send,
     &__btn-cancel {
+        font-weight: bold;
         padding: 5px 10px;
         border: none;
         outline: none;
-        color: rgb(65, 65, 65);
+        color: rgb(248, 241, 241);
         cursor: pointer;
 
         &:hover {
@@ -68,20 +67,20 @@ button {
     }
 
     &__btn-send {
-        background-color: rgb(119, 235, 144);
+        background-color: rgb(37, 19, 102);
         margin-right: 10px;
 
         &:hover {
-            background-color: rgb(55, 165, 79);
+            background-color: rgb(79, 55, 165);
         }
     }
 
     &__btn-cancel {
-        background-color: rgb(235, 119, 134);
+        background-color: rgb(119, 222, 235);
 
         &:hover {
-            color: rgb(255, 255, 255);
-            background-color: rgb(231, 70, 92);
+            color: rgb(10, 10, 10);
+            background-color: rgb(156, 231, 241);
         }
     }
 }

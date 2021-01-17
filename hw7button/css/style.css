@@ -16,7 +16,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   width: 1000px;
-  height: 500px;
+  height: 100vh;
 }
 
 #btn__show-modal {
@@ -45,12 +45,12 @@ button {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgba(10, 12, 173, 0.582);
+  background-color: #458FF6;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
-.my-modal-box__input-name, .my-modal-box__input-surname {
+.my-modal-box__input-name, .my-modal-box__input-email {
   display: block;
   font-size: 18px;
   margin-bottom: 10px;
@@ -61,10 +61,11 @@ button {
 }
 
 .my-modal-box__btn-send, .my-modal-box__btn-cancel {
+  font-weight: bold;
   padding: 5px 10px;
   border: none;
   outline: none;
-  color: #414141;
+  color: #f8f1f1;
   cursor: pointer;
 }
 
@@ -73,20 +74,20 @@ button {
 }
 
 .my-modal-box__btn-send {
-  background-color: #77eb90;
+  background-color: #251366;
   margin-right: 10px;
 }
 
 .my-modal-box__btn-send:hover {
-  background-color: #37a54f;
+  background-color: #4f37a5;
 }
 
 .my-modal-box__btn-cancel {
-  background-color: #eb7786;
+  background-color: #77deeb;
 }
 
 .my-modal-box__btn-cancel:hover {
-  color: white;
-  background-color: #e7465c;
+  color: #0a0a0a;
+  background-color: #9ce7f1;
 }
 /*# sourceMappingURL=style.css.map */
