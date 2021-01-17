@@ -48,7 +48,7 @@ function createModalBox() {
     })
 
     modalBox.appendChild(inputName);
-    modalBox.appendChild(inputSurname);
+    modalBox.appendChild(inputEmail);
     modalBox.appendChild(btnSend);
     modalBox.appendChild(btnCancel);
     return modalBox;
