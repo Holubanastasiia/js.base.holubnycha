@@ -21,9 +21,12 @@ let users = {
 };
 
 function countOnline(obj) {
-    var obj = users.[]
-    for (obj === true in users) {
-
+    var online = 0
+    for (var i in obj) {
+        if (obj[i].online === true) {
+            online++
+        }
     }
+    return online;
 }
 console.log(countOnline(users));

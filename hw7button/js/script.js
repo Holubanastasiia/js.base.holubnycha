@@ -32,8 +32,6 @@ function createModalBox() {
     btnSend.classList.add('my-modal-box__btn-send');
     btnSend.innerText = 'Go';
 
-    // var checkEmail = inputEmail.value.indexOf("@");
-
     btnSend.addEventListener('click', () => {
         if (inputEmail.value.indexOf("@") == -1) {
             alert("Вы ввели неправильный E-mail");
